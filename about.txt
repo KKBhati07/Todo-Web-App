@@ -1,0 +1,9 @@
+it is a Todo app, developed with the help of HTML, CSS and Javascript,
+user can store their todo tasks in it, can delete them once completed,
+and can mark them as pending or completed.
+to mark the task as pending or completed, click on the task.
+All the todo tasks entered by the user, gets saved in the local storage,
+and gets fetched once the app restarts.
+User can navigate to the menu by clicking in the menu button to the right of the logo of the app.
+In menu, user can see the total tasks and number of pending tasks as well,
+also user can change the theme of the app from the menu.

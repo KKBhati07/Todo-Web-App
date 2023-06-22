@@ -1,0 +1,304 @@
+/* ======Declaring variables to root======== */
+:root{
+    --backgroundColor:rgb(0, 43, 43);
+    --headColor:rgb(209, 209, 209);
+    --fontColor:rgb(255, 255, 255);
+    --hoverColor:darkgrey;
+    --inputBoxColor:lightgrey;
+}
+/* =======setting root properties======== */
+*{
+    /* box-sizing: border-box; */
+    background-color: var(--backgroundColor);
+    /* for Mozilla Firefox */
+    scrollbar-width: 0;
+
+}
+body{
+    overflow: hidden;
+}
+*::-webkit-scrollbar {
+    width: 0; 
+  }
+
+/* ===========Declaring hover classes============= */
+.on-hover:hover{
+    color: darkgrey;
+}
+.on-input-hover:hover{
+    border: solid darkgray 10px;
+}
+.on-hover-items:hover{
+    border: solid var(--hoverColor) 2px;
+    scale: 1.1;
+    transition: all 0.7s ease-in-out;
+
+    /* background-color: lightgrey; */
+}
+.on-hover-menu:hover{
+    scale: 1.2;
+}
+.text-hover:hover{
+    scale: 1.2;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+/* ============CONTAINER=========== */
+.container{
+    /* box-sizing:; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* justify-content: center; */
+    overflow: hidden;
+    align-items: center;
+
+
+}
+
+
+/* ===============HEADING=============== */
+.heading-menu-container{
+    display: flex;
+    overflow: visible;
+    align-items: center;
+}
+.heading{
+    cursor: default;
+    display: inline-block;
+    font-size: 4rem;
+    font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    color: var(--headColor);
+}
+
+/* ==========TAKING INPUT=============== */
+.todo-input{
+    width: 35vw;
+    height: 10vh;
+    color: darkgrey;
+    font-size: 1.3rem;
+    outline: none;
+    border-radius: 5px;
+    border: solid lightgray 10px;
+}
+.todo-input::placeholder{
+    text-align: center;
+    color: darkgrey;
+    font-size: 1.3rem;
+}
+/* ========MENU ICON================= */
+.menu-icon{
+    background-image: url(menu-icon.png);
+    background-size: contain;
+    display: inline-block;
+    margin-right: -3vw;
+    margin-top: 8px;
+    margin-left: 3vw;
+    border-radius: 50%;
+    height: 6vh;
+    width: 6vh;
+}
+
+/* ===============LIST ITEMS============== */
+.items-container{
+    cursor: default;
+    flex-direction: column;
+    overflow: scroll;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: 60vh;
+    width: 35vw;
+}
+
+@media (max-width: 768px) {
+    /* Adjusting the width for smaller screens */
+    .items-container {
+      width: 48%;
+    }
+  }
+.todo-list{
+
+    display: flex;
+    list-style: none;
+    overflow: visible;
+    margin-bottom: .5vh;
+    width: 29vw;
+    justify-content: space-between;
+    border: 2px var(--inputBoxColor) solid;
+    border-radius: 2%;
+    align-items: center;
+
+}
+.todo-item{
+
+    background: transparent;
+    margin-left: 1vh;
+    color: var(--fontColor);
+}
+.toggle-on-complete{
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+
+.delete-todo{
+    background-image: url(close-icon.png);
+    border-radius: 50%;
+    background-size: contain;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 1vw;
+}
+
+/* ================POPUP MENU=================== */
+
+.menu-container {
+    cursor: context-menu;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+  
+.menu-content {
+    height: 52vh;
+    width: 50vw;
+    padding: 7px;
+    border: 2px solid var(--headColor); 
+    border-radius: 5px;
+}
+.heading-container{
+    display: flex;
+}
+  
+.menu-heading {
+    color: var(--headColor);
+    text-decoration: underline;
+    /* font-family: 'Gill Sans; */
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder ;
+    font-size: 2.1rem;
+    margin-top:0 ;
+    box-sizing: border-box;
+    padding: 0%;
+    margin-left: 15vw;
+}
+#close-btn{
+    position: absolute;
+    right: 25vw;
+    float: right;
+    background-image: url(close-icon.png);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+    background-size: contain;
+}
+  
+.menu-content ul {
+    list-style: none;
+ 
+}
+  
+.menu-content li {
+    margin-bottom: 10px;
+    font-family:  cursive;
+}
+.list h2{
+    color: var(--fontColor);
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+  /* ================SETTING COLORS================ */
+.color-hover:hover{
+    scale: 1.2;
+}
+
+.color-box{
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.black{
+    background-color:rgb(24, 21, 21) ;
+}
+.red{
+    background-color:rgb(87, 8, 2) ;
+}
+.blue{
+    background-color:rgb(0, 1, 58) ;
+}
+.green{
+    background-color:rgb(0, 63, 8) ;
+}
+.aqua{
+    background-color:rgb(0, 43, 43) ;
+}
+.pink{
+  background-color: rgb(226, 93, 93);
+  /* border: 2px black solid; */
+}
+
+
+/* ==================ALERT BOX============== */
+
+.alert-container {
+  cursor: context-menu;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+.alert-content {
+
+    min-height: 25vh;
+    height: 25vh;
+    width: 35vw;
+    text-align: center;
+    padding: 0px;
+    border-radius: 5px;
+    border: 2px solid var(--headColor);
+}
+
+.alert-content h2{
+    font-family: cursive;
+    color: var(--fontColor);
+    display: inline-block;
+}
+.alert-content h3{
+    font-family: cursive;
+    color: var(--fontColor);  
+}
+
+#alert-close-btn{
+  position: absolute;
+  display: inline-block;
+  right: 32.5vw;
+  background-image: url(close-icon.png);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+
+  background-size: contain;
+}
+

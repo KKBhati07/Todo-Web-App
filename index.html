@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="icon" href="app-icon.png" type="img/png">
+</head>
+<body>
+    <div class="container">
+        <div class="heading-menu-container">
+        <h1 class="heading on-hover">TODOS</h1>
+        <div class="menu-icon on-hover-menu"id="menu-button"></div>
+    </div>
+    <input placeholder="Add your  Todos" id="input-todo" type="text" class="todo-input on-input-hover">
+    <div class="items-container">
+        <ul id="item-list">  
+        </ul>
+    </div>
+    </div>
+
+        <!-- Pop-up container -->
+<div class="menu-container" id="menu-container">
+    <div class="menu-content">
+        <div class="heading-container">
+
+            <h2 class="text-hover menu-heading">THE TODO APP</h2>
+            <div class="text-hover" id="close-btn"></div>
+        </div>
+      <ul class="list">
+        <li><div class="change-color" id="change-color">
+            <h2 class="margin-left" id="change-color-toggle">Theme</h2>
+            <div class="color-box black color-hover" id="0"></div>
+            <div class="color-box red color-hover" id="1"></div>
+            <div class="color-box blue color-hover" id="2"></div>
+            <div class="color-box green color-hover" id="3"></div>
+            <div class="color-box aqua color-hover" id="4"></div>
+            <div class="color-box pink color-hover" id="5"></div>
+        </div></li>
+        <li><div ><h2 class="margin-left" id="total-tasks">Total Tasks:0</h2></h2></li>
+        <li><h2 class=" margin-left" id="completed-tasks">Pending: 0</h2></li>
+      </ul>
+    </div>
+  </div>
+
+        <!-- Alert Box -->
+  <div class="alert-container" id="alert-container">
+    <div class="alert-content">
+        <h2>Alert!</h2>
+        <div class="text-hover" id="alert-close-btn"></div>
+        <h3 id="alert-message">Message</h3>
+    </div>
+  </div>
+    
+
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+</html>
