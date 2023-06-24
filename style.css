@@ -89,7 +89,7 @@ body{
 }
 /* ========MENU ICON================= */
 .menu-icon{
-    background-image: url(menu-icon.png);
+    background-image: url(./Images/menu-icon.png);
     background-size: contain;
     display: inline-block;
     margin-right: -3vw;
@@ -134,6 +134,7 @@ body{
 
     background: transparent;
     margin-left: 1vh;
+    font-family: cursive;
     color: var(--fontColor);
 }
 .toggle-on-complete{
@@ -143,7 +144,7 @@ body{
 
 
 .delete-todo{
-    background-image: url(close-icon.png);
+    background-image: url(./Images/close-icon.png);
     border-radius: 50%;
     background-size: contain;
     display: inline-block;
@@ -195,7 +196,7 @@ body{
     position: absolute;
     right: 25vw;
     float: right;
-    background-image: url(close-icon.png);
+    background-image: url(./Images/close-icon.png);
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -294,7 +295,7 @@ body{
   position: absolute;
   display: inline-block;
   right: 32.5vw;
-  background-image: url(close-icon.png);
+  background-image: url(./Images/close-icon.png);
   height: 30px;
   width: 30px;
   border-radius: 50%;
