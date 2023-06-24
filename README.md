@@ -26,6 +26,9 @@ To run the Todo-Web-App locally:
 3. Open the `index.html` file in a web browser.
 4. Start using the Todo-Web-App to manage your tasks.
 
+to run the Todo-Web-App online:
+1. go to https://kkbhati07.github.io/Todo-Web-App/ from your browser.
+
 ## Screenshots
 
 ![Todo-Web-App Screenshot](./Screenshots/1.png)
