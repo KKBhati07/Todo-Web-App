@@ -31,7 +31,7 @@ body{
 .on-hover-items:hover{
     border: solid var(--hoverColor) 2px;
     scale: 1.1;
-    transition: all 0.7s ease-in-out;
+    /* transition: all 0.7s ease-in-out; */
 
     /* background-color: lightgrey; */
 }
@@ -40,7 +40,7 @@ body{
 }
 .text-hover:hover{
     scale: 1.2;
-    transition: all 0.5s ease-in-out;
+    /* transition: all 0.5s ease-in-out; */
     opacity: 1;
 }
 /* ============CONTAINER=========== */
@@ -118,6 +118,7 @@ body{
     }
   }
 .todo-list{
+    transition: all 0.2s ease-in-out;
 
     display: flex;
     list-style: none;
@@ -131,6 +132,7 @@ body{
 
 }
 .todo-item{
+    /* transition: all 0.5s ease-in-out; */
 
     background: transparent;
     margin-left: 1vh;
@@ -181,6 +183,7 @@ body{
 }
   
 .menu-heading {
+    transition: all 0.5s ease-in-out;
     color: var(--headColor);
     text-decoration: underline;
     /* font-family: 'Gill Sans; */

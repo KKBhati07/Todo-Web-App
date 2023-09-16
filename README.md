@@ -6,7 +6,7 @@ The Todo-Web-App is a simple and interactive web application developed using HTM
 
 - HTML
 - CSS
-- JavaScript
+- TypeScript
 
 ## Features
 
